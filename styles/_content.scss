@@ -1,0 +1,47 @@
+@import './functions';
+.Content{
+    display: flex;
+    padding: 5%;
+    flex-flow: column nowrap;
+    &-image-secret{
+        max-width: 100%;
+    }
+    & h1, & h2{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+    }
+    &-description{
+        color: rgba(6,10,36,1);  
+        &-title{
+            display: inline-block;
+            margin: 0;
+            &:nth-child(2) {
+                text-decoration: line-through;
+            }
+            &:nth-child(3) {
+                width: 100%;
+            }
+        }
+        &-desktop{                 
+            display: none;
+        }
+        &-mobile{         
+        }
+        & p{
+            line-height: 22px;
+            color: blue;               
+            font-size: 14px;
+            margin-bottom: 3em;
+        }        
+    }
+    &-knowMore{
+        background-color: rgba(0,243,187,1);
+        color: rgba(6,10,36,1);
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        height: pxToem(16, 48) * 1em;
+        border: none;
+    }
+}

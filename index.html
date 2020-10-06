@@ -6,46 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podcast</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
 </head>
 
 <body>
     <header class="Header">
         <img class="Header-logo" src="./images/logo.svg"></img>
-        <ul class="Header-Items">
-            <li class="Header-item"><a href="" class="Header-link">Episodios</a></li>
-            <li class="Header-item"><a href="" class="Header-link">Nosotros</a></li>
-            <li class="Header-item"><a href="" class="Header-link">Entrevistas</a></li>
-            <li class="Header-item"><a href="" class="Header-link">Tópicos</a></li>
-        </ul>
+        <label for="Hamburguer" class="Header-menu-Hamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <nav  class="Header-menu">            
+            <input type="checkbox" id="Hamburguer" class="Header-menu-checkbox">
+            <ul class="Header-menu-items">
+                <li class="Header-menu-item"><a href="" class="Header-link">Episodios</a></li>
+                <li class="Header-menu-item"><a href="" class="Header-link">Nosotros</a></li>
+                <li class="Header-menu-item"><a href="" class="Header-link">Entrevistas</a></li>
+                <li class="Header-menu-item"><a href="" class="Header-link">Tópicos</a></li>
+            </ul>
+        </nav>        
     </header>
 
     <main class="Content">
-        <h1 class="Content-title">
-            <span class="Content-tittle-span">Hello</span>
-            <span class="Content-tittle-span">world</span>
-            <span class="Content-tittle-span">pale blue dot.</span>
-        </h1>
-        <p class="Content-description">
-            El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los
-            jueves cada 15 días.
-        </p>
-        <button class="Content-knowMore">CONOÉ MÁS</button>
-        <section class="Content-episodes">
-            <h2 class="Content-episodes-title">Episodios</h2>
-            <iframe src="" frameborder="0" class="Content-episodes-iframe"></iframe>
-            <iframe src="" frameborder="0" class="Content-episodes-iframe"></iframe>
-            <iframe src="" frameborder="0" class="Content-episodes-iframe"></iframe>
-            <iframe src="" frameborder="0" class="Content-episodes-iframe"></iframe>
+        <section class="Content-description">
+            <h1 class="Content-description-title">Hello</h1>
+            <h1 class="Content-description-title"> world</h1>
+            <h1 class="Content-description-title"> pale blue dot.</h1>
+            <p class="Content-description-mobile">
+                Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+            </p>
+            <p class="Content-description-desktop">
+                El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los
+                jueves cada 15 días.
+            </p>
+            <button class="Content-knowMore">CONOCÉ MÁS</button>
         </section>
-        <img class="Content-image-secret"></img>
-        <section class="Content-weComeFrom">
-            <h2 class="Content-weComeFrom-title">De dónde venimos</h2>
-            <p class="COntent-weComeFrom-p">Our posturings, our imagined self-importance, the delusion that we have some
-                privileged position in the Universe, are challenged by this point of pale light.</p>
-            <p class="COntent-weComeFrom-p">Our planet is a lonely speck in the great enveloping cosmic dark. In our
-                obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from
-                ourselves.</p>
-        </section>
+        
+        <div class="Content-grid">
+            <section class="Content-episodes">
+                <h2 class="Content-episodes-title">Episodios</h2>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/4B39D4l8XfiyRsV4f53vSe" frameborder="0" class="Content-episodes-iframe"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0" class="Content-episodes-iframe"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0" class="Content-episodes-iframe"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/5mddqHiI96V0ZMdMidn3WW" frameborder="0" class="Content-episodes-iframe"></iframe>
+            </section>
+            <section class="Content-weComeFrom">
+                <img class="Content-image-secret" src="./images/phone.png"></img>
+                <h2 class="Content-weComeFrom-title">De dónde venimos</h2>
+                <p class="COntent-weComeFrom-p">Our posturings, our imagined self-importance, the delusion that we have some
+                    privileged position in the Universe, are challenged by this point of pale light.</p>
+                <p class="COntent-weComeFrom-p">Our planet is a lonely speck in the great enveloping cosmic dark. In our
+                    obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from
+                    ourselves.</p>
+            </section>
+        </div>
         <section class="Content-guests">
             <h2 class="Content-guests-title">Invitadas/os estelares</h2>
             <img src="" alt="">

@@ -1,1 +1,126 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.Content-image-secret {
+  max-width: 100%;
+}
+
+.Content h1, .Content h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+}
+
+.Content-description {
+  color: #060a24;
+}
+
+.Content-description-title {
+  display: inline-block;
+  margin: 0;
+}
+
+.Content-description-title:nth-child(2) {
+  text-decoration: line-through;
+}
+
+.Content-description-title:nth-child(3) {
+  width: 100%;
+}
+
+.Content-description-desktop {
+  display: none;
+}
+
+.Content-description p {
+  line-height: 22px;
+  color: blue;
+  font-size: 14px;
+  margin-bottom: 3em;
+}
+
+.Content-knowMore {
+  background-color: #00f3bb;
+  color: #060a24;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  height: 3em;
+  border: none;
+}
+
+.Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  position: relative;
+}
+
+.Header-logo {
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.Header-menu-Hamburger {
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
+.Header-menu {
+  width: 100%;
+}
+
+.Header-menu-items {
+  height: 0px;
+  -webkit-transition: height 0.7s ease;
+  transition: height 0.7s ease;
+  overflow: hidden;
+  color: white;
+  background-color: #0000ec;
+}
+
+.Header-menu-checkbox {
+  display: none;
+}
+
+.Header-menu-checkbox:checked ~ .Header-menu-items {
+  height: 14em;
+}
+
+.Header-menu-item {
+  line-height: 3.5em;
+  list-style: none;
+  width: 100%;
+  font-size: 16px;
+  height: 3.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+}
+/*# sourceMappingURL=style.css.map */
