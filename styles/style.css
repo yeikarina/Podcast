@@ -7,9 +7,10 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  position: relative;
 }
 
-.Content-image-secret {
+.Content img {
   max-width: 100%;
 }
 
@@ -57,6 +58,30 @@
   border: none;
 }
 
+@media screen and (min-width: 768px) {
+  .Content-description {
+    margin-left: 5%;
+  }
+  .Content-description h1, .Content-description h2 {
+    font-size: 64px;
+  }
+  .Content-description-title:nth-child(3) {
+    width: auto;
+  }
+  .Content-description-desktop {
+    display: inline-block;
+    max-width: 628px;
+    line-height: 24px;
+  }
+  .Content-description-mobile {
+    display: none;
+  }
+  .Content-knowMore {
+    width: 226px;
+    position: relative;
+  }
+}
+
 .Header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,21 +97,22 @@
   position: relative;
 }
 
+.Header label {
+  color: #060A24;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
 .Header-logo {
   padding-left: 5%;
   padding-top: 5%;
 }
 
-.Header-menu-Hamburger {
-  padding-right: 5%;
-  padding-top: 5%;
+.Header-close {
+  display: none;
 }
 
 .Header-menu {
-  width: 100%;
-}
-
-.Header-menu-items {
   height: 0px;
   -webkit-transition: height 0.7s ease;
   transition: height 0.7s ease;
@@ -95,20 +121,34 @@
   background-color: #0000ec;
 }
 
-.Header-menu-checkbox {
+.Header-checkbox {
   display: none;
 }
 
-.Header-menu-checkbox:checked ~ .Header-menu-items {
+.Header-checkbox:checked ~ .Header-menu {
   height: 14em;
 }
 
-.Header-menu-item {
+.Header-checkbox:checked ~ .Header-hamburguer .Hamburguer {
+  display: none;
+}
+
+.Header-checkbox:checked ~ .Header-close {
+  height: 30px;
+  display: inline-block;
+}
+
+.Header-item {
   line-height: 3.5em;
   list-style: none;
   width: 100%;
   font-size: 16px;
   height: 3.5em;
+}
+
+.Header-menu {
+  width: 100%;
+  margin-top: 0.625em;
 }
 
 a {
@@ -122,5 +162,12 @@ a:visited {
 
 body {
   font-family: 'IBM Plex Mono', monospace;
+}
+
+.Content-episodes {
+  background: -webkit-gradient(linear, right top, left bottom, from(#0000FF), to(#0000A3));
+  background: linear-gradient(to bottom left, #0000FF, #0000A3);
+  -webkit-clip-path: polygon(100% 0%, 0% 5%, 0% 100%, 100% 95%);
+          clip-path: polygon(100% 0%, 0% 5%, 0% 100%, 100% 95%);
 }
 /*# sourceMappingURL=style.css.map */

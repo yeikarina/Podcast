@@ -3,7 +3,8 @@
     display: flex;
     padding: 5%;
     flex-flow: column nowrap;
-    &-image-secret{
+    position: relative;
+    img{
         max-width: 100%;
     }
     & h1, & h2{
@@ -25,8 +26,6 @@
         &-desktop{                 
             display: none;
         }
-        &-mobile{         
-        }
         & p{
             line-height: 22px;
             color: blue;               
@@ -43,5 +42,30 @@
         width: 100%;
         height: pxToem(16, 48) * 1em;
         border: none;
+    }
+    @media screen and (min-width: 768px){
+        &-description{
+            margin-left: 5%;
+            & h1, & h2{
+                font-size: 64px;
+            }
+            &-title{
+                &:nth-child(3) {
+                    width: auto;
+                }
+            }
+            &-desktop{                 
+                display: inline-block;
+                max-width: 628px;
+                line-height: 24px;
+            }
+            &-mobile{   
+                display: none;      
+            }
+        }
+        &-knowMore{            
+            width: 226px;
+            position: relative;
+        }
     }
 }

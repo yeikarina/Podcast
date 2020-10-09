@@ -4,38 +4,51 @@
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    width: 100%;
+    width: 100%;    
     position: relative;
-    &-logo{
-        padding-left: 5%;
-        padding-top: 5%;
-    }
-    &-menu-Hamburger{
+    & label{
+        color: #060A24;           
         padding-right: 5%;
         padding-top: 5%;
     }
+
+    &-logo{        
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    &-close{
+        display: none;
+    }
+    &-menu{
+        height: 0px;
+        transition: height 0.7s ease;
+        overflow: hidden;   
+        color: rgba(255,255,255,1);
+        background-color: rgba(0,0,236,1);
+    }
+    &-checkbox{
+        display: none;
+    }
+    
+    &-checkbox:checked ~ &-menu{
+        height: pxToem(16,56) * 4em;
+    }
+    &-checkbox:checked ~ &-hamburguer .Hamburguer{  
+        display: none;
+    }
+    &-checkbox:checked ~ &-close{
+        height:30px;
+        display: inline-block;
+    }
+    &-item{           
+        line-height: pxToem(16,56) * 1em; 
+        list-style: none;   
+        width: 100%;  
+        font-size: 16px;  
+        height: pxToem(16,56) * 1em; 
+    }
     &-menu{             
-        width: 100%;
-        
-        &-items{
-            height: 0px;
-            transition: height 0.7s ease;
-            overflow: hidden;   
-            color: rgba(255,255,255,1);
-            background-color: rgba(0,0,236,1);
-        }
-        &-checkbox{
-            display: none;
-        }
-        &-checkbox:checked ~ &-items{
-            height: pxToem(16,56) * 4em;
-        }
-        &-item{           
-            line-height: pxToem(16,56) * 1em; 
-            list-style: none;   
-            width: 100%;  
-            font-size: 16px;  
-            height: pxToem(16,56) * 1em; 
-        }
+        width: 100%;  
+        margin-top: pxToem(16,10) * 1em;
     }
 }

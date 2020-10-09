@@ -14,17 +14,19 @@
 
 <body>
     <header class="Header">
-        <img class="Header-logo" src="./images/logo.svg"></img>
-        <label for="Hamburguer" class="Header-menu-Hamburger">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+        <img class="Header-logo" src="./images/logo.svg" alt="BlueDot Icon">
+        <input type="checkbox" id="Hamburguer" class="Header-checkbox">
+        <label for="Hamburguer" class="Header-hamburguer">
+            <i class="fa fa-bars Hamburguer" aria-hidden="true"></i>
         </label>
-        <nav  class="Header-menu">            
-            <input type="checkbox" id="Hamburguer" class="Header-menu-checkbox">
-            <ul class="Header-menu-items">
-                <li class="Header-menu-item"><a href="" class="Header-link">Episodios</a></li>
-                <li class="Header-menu-item"><a href="" class="Header-link">Nosotros</a></li>
-                <li class="Header-menu-item"><a href="" class="Header-link">Entrevistas</a></li>
-                <li class="Header-menu-item"><a href="" class="Header-link">Tópicos</a></li>
+        <label for="Hamburguer" class="Header-close"><i class="fa fa-times Close" aria-hidden="true"></i>
+        </label> 
+        <nav  class="Header-menu"> 
+            <ul class="Header-items">
+                <li class="Header-item"><a href="" class="Header-link">Episodios</a></li>
+                <li class="Header-item"><a href="" class="Header-link">Nosotros</a></li>
+                <li class="Header-item"><a href="" class="Header-link">Entrevistas</a></li>
+                <li class="Header-item"><a href="" class="Header-link">Tópicos</a></li>
             </ul>
         </nav>        
     </header>
@@ -47,13 +49,17 @@
         <div class="Content-grid">
             <section class="Content-episodes">
                 <h2 class="Content-episodes-title">Episodios</h2>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/4B39D4l8XfiyRsV4f53vSe" frameborder="0" class="Content-episodes-iframe"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0" class="Content-episodes-iframe"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0" class="Content-episodes-iframe"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/5mddqHiI96V0ZMdMidn3WW" frameborder="0" class="Content-episodes-iframe"></iframe>
+                <div class="Div-iframe">
+
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/4B39D4l8XfiyRsV4f53vSe" class="Content-episodes-iframe"></iframe>
+                </div>
+               
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" class="Content-episodes-iframe"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" class="Content-episodes-iframe"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/5mddqHiI96V0ZMdMidn3WW" class="Content-episodes-iframe"></iframe>
             </section>
             <section class="Content-weComeFrom">
-                <img class="Content-image-secret" src="./images/phone.png"></img>
+                <img class="Content-image-secret" src="./images/phone.png" alt="Phone"></img>
                 <h2 class="Content-weComeFrom-title">De dónde venimos</h2>
                 <p class="COntent-weComeFrom-p">Our posturings, our imagined self-importance, the delusion that we have some
                     privileged position in the Universe, are challenged by this point of pale light.</p>
@@ -64,10 +70,12 @@
         </div>
         <section class="Content-guests">
             <h2 class="Content-guests-title">Invitadas/os estelares</h2>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="./images/grace-hopper.png" alt="Grace Hopper">
+            <img src="./images/Katie-Bouman.png" alt="Katie-Bouman">
+            <img src="./images/Margaret_Hamilton.png" alt="Margaret_Hamilton">
+            <img src="./images/An_E.R.A.Univac.png" alt="E.R.A.Univac">
+            <img src="./images/Computer_operators.png" alt="Comuter operators">
+            <img src="./images/susan-kare.png" alt="Susan Kare">
         </section>
         <section class="Content-topics">
             <h2 class="Content-topics-title">Algunos de nuestros temas</h2>
@@ -91,7 +99,7 @@
 
         </section>
         <section class="Content-lastsNews">
-            <h2 class="Content-lastsNews-title"></h2>
+            <h2 class="Content-lastsNews-title">¿Querés las últimas novedades?</h2>
             <button class="Content-lastsNews-button"></button>
         </section>
     </main>
