@@ -9,6 +9,13 @@
   position: relative;
 }
 
+.Content p {
+  line-height: 22px;
+  color: #060A24;
+  font-size: 14px;
+  margin-bottom: 3em;
+}
+
 .Content img {
   max-width: 100%;
 }
@@ -38,13 +45,6 @@
 
 .Content-description-desktop {
   display: none;
-}
-
-.Content-description p {
-  line-height: 22px;
-  color: blue;
-  font-size: 14px;
-  margin-bottom: 3em;
 }
 
 .Content-knowMore {
@@ -269,5 +269,13 @@ body {
             column-gap: 5%;
     row-gap: 10%;
   }
+}
+
+.WeComeFrom {
+  margin: 0 5% 5% 5%;
+}
+
+.WeComeFrom p {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
