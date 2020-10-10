@@ -1,7 +1,6 @@
 @import './functions';
 .Content{
     display: flex;
-    padding: 5%;
     flex-flow: column nowrap;
     position: relative;
     img{
@@ -13,6 +12,7 @@
     }
     &-description{
         color: rgba(6,10,36,1);  
+        margin: 0 5%;
         &-title{
             display: inline-block;
             margin: 0;
@@ -45,7 +45,7 @@
     }
     @media screen and (min-width: 768px){
         &-description{
-            margin-left: 5%;
+            margin-left: 10%;
             & h1, & h2{
                 font-size: 64px;
             }
@@ -56,16 +56,18 @@
             }
             &-desktop{                 
                 display: inline-block;
-                max-width: 628px;
+                width: 628px;
                 line-height: 24px;
             }
             &-mobile{   
-                display: none;      
+                display: none;   
             }
         }
-        &-knowMore{            
-            width: 226px;
+        &-knowMore{       
+            font-size: 18px;     
+            width: 19%;
             position: relative;
+            margin-right: 81%;
         }
     }
 }
