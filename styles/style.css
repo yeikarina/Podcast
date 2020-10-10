@@ -93,6 +93,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   position: relative;
 }
@@ -104,8 +107,9 @@
 }
 
 .Header-logo {
-  padding-left: 5%;
-  padding-top: 5%;
+  width: 24px;
+  height: 24px;
+  margin-left: 5%;
 }
 
 .Header-close {
@@ -119,6 +123,8 @@
   overflow: hidden;
   color: white;
   background-color: #0000ec;
+  width: 100%;
+  margin-top: 0.625em;
 }
 
 .Header-checkbox {
@@ -129,7 +135,7 @@
   height: 14em;
 }
 
-.Header-checkbox:checked ~ .Header-hamburguer .Hamburguer {
+.Header-checkbox:checked ~ .Header-hamburguer {
   display: none;
 }
 
@@ -146,9 +152,60 @@
   height: 3.5em;
 }
 
-.Header-menu {
-  width: 100%;
-  margin-top: 0.625em;
+.Header-link:visited {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .Header-logo {
+    width: 36px;
+    height: 36px;
+  }
+  .Header-checkbox:checked ~ .Header-close {
+    display: none;
+  }
+  .Header-checkbox:checked ~ .Header-menu {
+    height: 5em;
+  }
+  .Header-hamburguer {
+    display: none;
+  }
+  .Header-menu {
+    color: #060a24;
+    background-color: #FFFFFF;
+    position: relative;
+    height: 5em;
+    width: 43%;
+    margin-right: 5%;
+    margin-top: 0;
+  }
+  .Header-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .Header-item {
+    margin: 1%;
+  }
+  .Header-item:last-child {
+    -ms-flex-negative: 3;
+        flex-shrink: 3;
+  }
+  .Header-link:visited {
+    text-decoration: none;
+    color: #060a24;
+  }
 }
 
 a {

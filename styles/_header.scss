@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    align-items: center;
     width: 100%;    
     position: relative;
     & label{
@@ -13,8 +14,9 @@
     }
 
     &-logo{        
-        padding-left: 5%;
-        padding-top: 5%;
+        width: 24px;
+        height: 24px;
+        margin-left: 5%;
     }
     &-close{
         display: none;
@@ -24,7 +26,9 @@
         transition: height 0.7s ease;
         overflow: hidden;   
         color: rgba(255,255,255,1);
-        background-color: rgba(0,0,236,1);
+        background-color: rgba(0,0,236,1);                     
+        width: 100%;  
+        margin-top: pxToem(16,10) * 1em;
     }
     &-checkbox{
         display: none;
@@ -33,7 +37,7 @@
     &-checkbox:checked ~ &-menu{
         height: pxToem(16,56) * 4em;
     }
-    &-checkbox:checked ~ &-hamburguer .Hamburguer{  
+    &-checkbox:checked ~ &-hamburguer{  
         display: none;
     }
     &-checkbox:checked ~ &-close{
@@ -47,8 +51,52 @@
         font-size: 16px;  
         height: pxToem(16,56) * 1em; 
     }
-    &-menu{             
-        width: 100%;  
-        margin-top: pxToem(16,10) * 1em;
+    &-link:visited{
+        text-decoration: none;    
+        color: rgba(255,255,255,1);
+    }
+    @media screen and (min-width: 768px){  
+        &-logo{        
+            width: 36px;
+            height: 36px;
+        }    
+        &-checkbox:checked ~ &-close{            
+            display: none;
+        }
+        &-checkbox:checked ~ &-menu{
+            height: pxToem(16,80) * 1em;
+        }
+        &-hamburguer {
+            display: none;
+        }
+        &-menu{            
+            color: rgba(6,10,36,1);
+            background-color: #FFFFFF;
+            position: relative;
+            height: pxToem(16,80) * 1em;            
+            width:43%;
+            margin-right: 5%;
+            margin-top: 0;            
+        }
+        &-items{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        &-item{        
+            margin: 1%;
+        }
+        &-item:last-child{        
+            flex-shrink: 3;
+        }
+        &-link:visited{
+            text-decoration: none;    
+            color: rgba(6,10,36,1);
+        }
+
     }
 }
