@@ -299,4 +299,39 @@ body {
     margin: 0 4.3% 0 13.9%;
   }
 }
+
+.Content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto 30vw auto;
+      grid-template-rows: auto 30vw auto;
+}
+
+.Content-grid .Episodes {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/ 3;
+}
+
+.Content-grid .WeComeFrom {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+  z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .Content-grid {
+    -ms-grid-rows: auto 13vw auto;
+        grid-template-rows: auto 13vw auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
