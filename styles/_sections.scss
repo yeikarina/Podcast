@@ -42,4 +42,16 @@
     p{
         margin-bottom: 0;
     }
+    @media screen and (min-width: 768px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .WeComeFrom-text{
+            width: 50%;
+        }
+        .Content-image-secret{
+            width: 31.8%;
+            margin: 0 4.3% 0 13.9%;
+        }
+    }
 }
