@@ -491,7 +491,18 @@ html {
 
 @media screen and (min-width: 768px) {
   .LastsNews {
+    -webkit-clip-path: polygon(100% 0%, 0% 25%, 0% 100%, 100% 100%);
+            clip-path: polygon(100% 0%, 0% 25%, 0% 100%, 100% 100%);
+    padding-top: 10%;
     padding-bottom: 10%;
+    position: relative;
+  }
+  .LastsNews-button {
+    position: relative;
+    width: 30%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
