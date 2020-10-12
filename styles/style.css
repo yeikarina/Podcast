@@ -472,4 +472,67 @@ body {
     padding-bottom: 10%;
   }
 }
+
+.Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  position: relative;
+  color: #060A24;
+}
+
+.Footer-copyright {
+  font-size: 14px;
+}
+
+.Footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+.Footer-item {
+  display: inline-block;
+  list-style: none;
+}
+
+.Footer a:visited {
+  color: #060A24;
+}
+
+@media screen and (min-width: 768px) {
+  .Footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .Footer-items {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .Footer-item {
+    padding-left: 2em;
+  }
+}
 /*# sourceMappingURL=style.css.map */
