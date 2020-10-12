@@ -154,7 +154,17 @@
   height: 3.5em;
 }
 
+.Header-link:link {
+  text-decoration: none;
+  color: white;
+}
+
 .Header-link:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.Header-link:active {
   text-decoration: none;
   color: white;
 }
@@ -204,7 +214,15 @@
     -ms-flex-negative: 3;
         flex-shrink: 3;
   }
+  .Header-link:link {
+    text-decoration: none;
+    color: #060a24;
+  }
   .Header-link:visited {
+    text-decoration: none;
+    color: #060a24;
+  }
+  .Header-link:active {
     text-decoration: none;
     color: #060a24;
   }
@@ -216,6 +234,10 @@ a {
 
 body {
   font-family: 'IBM Plex Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .Episodes {
