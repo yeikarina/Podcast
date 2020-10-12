@@ -466,4 +466,10 @@ body {
   height: 3em;
   border: none;
 }
+
+@media screen and (min-width: 768px) {
+  .LastsNews {
+    padding-bottom: 10%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

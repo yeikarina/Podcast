@@ -164,4 +164,7 @@
         height: pxToem(16, 48) * 1em;
         border: none;
     }
+    @media screen and (min-width: 768px){
+        padding-bottom: 10%;
+    }
 }
