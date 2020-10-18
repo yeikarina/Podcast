@@ -107,15 +107,15 @@
 .Header label {
   color: #060A24;
   margin-right: 5%;
-  margin-top: 5%;
+  margin-top: 0.625em;
   font-size: 18px;
 }
 
 .Header-logo {
-  width: 24px;
-  height: 24px;
+  width: 1.5em;
+  height: 1.5em;
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 0.625em;
 }
 
 .Header-close {
@@ -488,6 +488,8 @@ html {
   }
   .Topics-title {
     width: 100%;
+    margin-left: 5%;
+    padding-left: 7vw;
   }
   .Topics-div {
     width: 25%;

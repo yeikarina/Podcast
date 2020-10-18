@@ -10,15 +10,14 @@
     & label{
         color: #060A24;           
         margin-right: 5%;
-        margin-top: 5%;
+        margin-top: pxToem(16, 10) * 1em;
         font-size: 18px;
     }
-
     &-logo{        
-        width: 24px;
-        height: 24px;
+        width: pxToem(16, 24) * 1em;
+        height: pxToem(16, 24) * 1em;
         margin-left: 5%;
-        margin-top: 5%;
+        margin-top: pxToem(16, 10) * 1em;
     }
     &-close{
         display: none;
