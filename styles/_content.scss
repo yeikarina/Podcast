@@ -18,7 +18,7 @@
     }
     &-description{
         color: rgba(6,10,36,1);  
-        margin: 0 5%;
+        margin: 0 10% pxToem(16,24) * 1em  5%;
         &-title{
             display: inline-block;
             margin: 0;
@@ -46,7 +46,9 @@
     }
     @media screen and (min-width: 768px){
         &-description{
-            margin-left: 10%;
+            margin-left: 10%;              
+            margin-top: pxToem(16,120) * 1em;          
+            padding-left: 7vw;
             & h1, & h2{
                 font-size: 64px;
             }

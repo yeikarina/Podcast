@@ -9,14 +9,16 @@
     position: relative;
     & label{
         color: #060A24;           
-        padding-right: 5%;
-        padding-top: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        font-size: 18px;
     }
 
     &-logo{        
         width: 24px;
         height: 24px;
         margin-left: 5%;
+        margin-top: 5%;
     }
     &-close{
         display: none;
@@ -51,10 +53,12 @@
         width: 100%;  
         font-size: 16px;  
         height: pxToem(16,56) * 1em; 
-    }
+        padding-left: 1em;
+    }    
     &-items{
         margin-top: 0;
         margin-bottom: 0;
+        padding: 0;
     }
     &-link:link{
         text-decoration: none;    
@@ -63,15 +67,23 @@
     &-link:visited{
         text-decoration: none;    
         color: rgba(255,255,255,1);
-    }
+    }    
     &-link:active{
         text-decoration: none;    
         color: rgba(255,255,255,1);
+    }        
+    &-item:hover{
+        background-color: white;
+    }
+    &-item:hover &-link{        
+        color: rgba(6,10,36,1);
     }
     @media screen and (min-width: 768px){  
         &-logo{        
             width: 36px;
             height: 36px;
+            margin-top: 0;
+            margin-left: 10%;
         }    
         &-checkbox:checked ~ &-close{            
             display: none;
@@ -88,8 +100,8 @@
             position: relative;
             height: pxToem(16,80) * 1em;            
             width:43%;
-            margin-right: 5%;
-            margin-top: 0;            
+            overflow: visible;
+            margin: 0 10% 0 0; 
         }
         &-items{
             display: flex;
@@ -98,10 +110,12 @@
             width: 100%;
             height: 100%;
             align-items: center;
+            align-self: center;
             justify-content: space-evenly;
         }
         &-item{        
             margin: 1%;
+            min-width: fit-content;
         }
         &-item:last-child{        
             flex-shrink: 3;
@@ -117,7 +131,10 @@
         &-link:active{
             text-decoration: none;    
             color: rgba(6,10,36,1);
+        }               
+        &-link:hover{
+            border-bottom: 4px solid rgba(0,0,236,1);
         }
-
     }
+    
 }

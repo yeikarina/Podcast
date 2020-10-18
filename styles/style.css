@@ -27,7 +27,7 @@
 
 .Content-description {
   color: #060a24;
-  margin: 0 5%;
+  margin: 0 10% 1.5em 5%;
 }
 
 .Content-description-title {
@@ -61,6 +61,8 @@
 @media screen and (min-width: 768px) {
   .Content-description {
     margin-left: 10%;
+    margin-top: 7.5em;
+    padding-left: 7vw;
   }
   .Content-description h1, .Content-description h2 {
     font-size: 64px;
@@ -104,14 +106,16 @@
 
 .Header label {
   color: #060A24;
-  padding-right: 5%;
-  padding-top: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  font-size: 18px;
 }
 
 .Header-logo {
   width: 24px;
   height: 24px;
   margin-left: 5%;
+  margin-top: 5%;
 }
 
 .Header-close {
@@ -153,11 +157,13 @@
   width: 100%;
   font-size: 16px;
   height: 3.5em;
+  padding-left: 1em;
 }
 
 .Header-items {
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
 .Header-link:link {
@@ -175,10 +181,20 @@
   color: white;
 }
 
+.Header-item:hover {
+  background-color: white;
+}
+
+.Header-item:hover .Header-link {
+  color: #060a24;
+}
+
 @media screen and (min-width: 768px) {
   .Header-logo {
     width: 36px;
     height: 36px;
+    margin-top: 0;
+    margin-left: 10%;
   }
   .Header-checkbox:checked ~ .Header-close {
     display: none;
@@ -195,8 +211,8 @@
     position: relative;
     height: 5em;
     width: 43%;
-    margin-right: 5%;
-    margin-top: 0;
+    overflow: visible;
+    margin: 0 10% 0 0;
   }
   .Header-items {
     display: -webkit-box;
@@ -209,12 +225,17 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
   .Header-item {
     margin: 1%;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
   }
   .Header-item:last-child {
     -ms-flex-negative: 3;
@@ -231,6 +252,9 @@
   .Header-link:active {
     text-decoration: none;
     color: #060a24;
+  }
+  .Header-link:hover {
+    border-bottom: 4px solid #0000ec;
   }
 }
 
@@ -301,6 +325,10 @@ html {
 
 .WeComeFrom {
   margin: 0 5% 5% 5%;
+}
+
+.WeComeFrom-title {
+  width: 70%;
 }
 
 .WeComeFrom p {
@@ -523,8 +551,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding: 0 14.5%;
   position: relative;
   color: #060A24;
 }
