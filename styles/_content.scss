@@ -3,6 +3,7 @@
     display: flex;
     flex-flow: column nowrap;
     position: relative;
+    width: 100vw;
     & p{
         line-height: 22px;
         color: #060A24 ;               
@@ -18,7 +19,7 @@
     }
     &-description{
         color: rgba(6,10,36,1);  
-        margin: 0 10% pxToem(16,24) * 1em  5%;
+        margin: 0 5% pxToem(16,24) * 1em  5%;
         &-title{
             display: inline-block;
             margin: 0;
@@ -27,6 +28,10 @@
             }
             &:nth-child(3) {
                 width: 100%;
+            }
+            &:nth-child(3)::after {
+                content: ".";
+                color: rgba(0,0,236,1);
             }
         }
         &-desktop{                 

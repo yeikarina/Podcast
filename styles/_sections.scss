@@ -10,7 +10,7 @@
     &-grid{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(4 , 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
     &-iframe{
         position: relative;
@@ -28,8 +28,8 @@
             margin-bottom: 3%;
         } 
         &-grid{
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr); 
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr; 
             column-gap: 5%;       
             row-gap: 10%;
         }
@@ -50,11 +50,12 @@
         align-items: center;
         justify-content: center;
         .WeComeFrom-text{
+            margin-top: 10%;
             width: 50%;
         }
         .Content-image-secret{
-            width: 31.8%;
-            margin: 0 4.3% 0 13.9%;
+            width: 37.7%;
+            margin: 0 4.3% 0 8%;
         }
     }
 }
